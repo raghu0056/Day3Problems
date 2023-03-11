@@ -1,15 +1,10 @@
 public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
 
-    public static void main(String[] arrg)
-    {
-        int[] a=new int[] {1,2,3,4,5,6};
-        System.out.println("Even position in array");
-        for(int i=1;i<a.length;i=i+2)
-        {
-            System.out.println(a[i]);
-
+        for (int i = arr.length - 1; i >= 0 ; i--) {
+            System.out.println(arr[i] );
         }
-
     }
-
 }
+
