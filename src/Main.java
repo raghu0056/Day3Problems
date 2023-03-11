@@ -1,16 +1,17 @@
 public class Main{
+    public static void main(String[] args) {
 
-    public static void main(String[] arrg)
-    {
-        int[] a=new int[] {1,2,3,4,5,6};
-        System.out.println("Even position in array");
-        for(int i=0;i<a.length;i=i+2)
+        int [] arr = new int [] {1, 2, 3, 2,};
+        System.out.println("Duplicate elements in given array: ");
+        for(int i = 0; i < arr.length; i++)
         {
-            System.out.println(a[i]);
-
+            for(int j = i + 1; j < arr.length; j++)
+            {
+                if(arr[i] == arr[j])
+                    System.out.println(arr[j]);
+            }
         }
-
     }
-
 }
+
 
