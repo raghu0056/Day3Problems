@@ -1,20 +1,21 @@
 public class Main{
-    public static void main(String args[]){
-        int temp, size;
-        int array[] = {1,2,3,4,5,6};
+    public static void main(String[] args) {
 
-        for(int i = 0; i<array.length; i++ ){
-            for(int j = i+1; j< array.length; j++){
+        int[] arr = new int[]{10, 40, 30, 20};
+        int Store = 0;
 
-                if(array[i]>array[j]){
-                    temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i]  > arr[j]) {
+                    Store = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = Store;
+
                 }
             }
         }
-        System.out.println("Second largest number is:: "+array[array.length-2]);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
-
-
