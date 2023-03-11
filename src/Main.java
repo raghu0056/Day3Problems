@@ -1,15 +1,15 @@
-public class Main{
-    public static void main(String[] args) {
-        int [] arr = new int [] {2,100, 7, 75, 56};
+public class Main {
 
-        int max = arr[0];
+    public static void main(String[] arrg)
+    {
+        int[] a=new int[] {1,2,3,4,5,6};
+        System.out.println("Even position in array");
+        for(int i=1;i<a.length;i=i+2)
+        {
+            System.out.println(a[i]);
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if(arr[i] < max)
-                max = arr[i];
         }
-        System.out.println("Largest element present in given array: " + max);
-    }
-}
 
+    }
+
+}
